@@ -1,0 +1,11 @@
+commit b4da850b905e515be25d3e85c6a8ef768d37545c
+Author: Gleb <gleb498@yandex.ru>
+Date:   Wed Feb 8 18:48:04 2017 +0300
+
+    add status.txt
+
+commit 4d1b7c506c677b694747daf881eca94e9689f29a
+Author: Gleb <gleb498@yandex.ru>
+Date:   Wed Feb 8 18:46:28 2017 +0300
+
+    add .gitignore
