@@ -1,13 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     outline: none;
 }
-html{
+
+html {
     height: 100%;
 
 }
-body{
+
+body {
     min-width: 1000px;
     margin: 0;
     padding: 0;
@@ -19,13 +21,16 @@ body{
     font-family: inherit;
     text-decoration: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.clear{
+
+.clear {
     clear: both;
 }
-header{
+
+header {
     height: 5%;
     width: 98%;
     float: left;
@@ -33,58 +38,128 @@ header{
     background-color: antiquewhite;
     border-bottom: 2px solid silver;
 }
-.logo{
+
+.logo {
     width: 40%;
     float: left;
 }
-header .logo a{
+
+header .logo a {
     font-family: "Times New Roman";
     font-size: 2em;
-    color: rgba(10,18,20,0.95);
+    color: rgba(10, 18, 20, 0.95);
 }
-header .logo span{
+
+header .logo span {
     color: #e36565;
 }
-.add-news{
+
+.add-news {
     float: left;
-    margin-left: 3%;
+    width: 120px;
+    padding: 10px 10px;
     background-color: salmon;
-    padding: 5px;
-    alignt: center;
-    border-radius: 5px;
-    border-style: dotted;
+    text-align: center;
+    border-radius: 10px;
 }
-.add-news a{
+
+.add-news a {
     border-radius: 5px;
     color: #333333;
 }
-.add-news:hover{
-    background-color: rgba(225,112,82,0.58);
+
+.add-news:hover {
+    background-color: rgba(225, 112, 82, 0.58);
 }
-.regAuth{
+
+.regAuth {
     width: 49%;
     float: left;
     text-align: right;
 }
 
-/*Filter*/
-.filter{
-    border-style: dotted;
-    width: 25%;
-    height: 50%;
+/* Post */
+.news {
+    border: 2px solid salmon;
+    border-radius: 10px;
     position: absolute;
-    right: 2%;
-    top: 20%;
+    left: 5%;
+    right: 30%;
+    top: 15%;
+    bottom: 65%;
 }
 
-aside {
-    width: 260px;
+.newsHeader {
+    margin-left: 5px;
+}
+.newsHeader h1{
+
+}
+.news p {
+    margin-top: 7px;
+}
+
+.leftimg {
+    float: left;
+    margin: 7px 7px 7px 5px;
+}
+
+.tags {
+    border: 2px solid salmon;
+    border-radius: 7px;
+    background-color: salmon;
+    margin-right: 3px;
+    color: #333333;
+}
+
+.author {
+    font-style: italic;
+}
+
+.date {
+    font-style: italic;
+}
+
+.newsActions {
     float: right;
-    margin-bottom: 30px;
+    margin-top: 1px;
+    margin-right: 5px;
+}
+
+.viewButton {
+    border: 2px solid salmon;
+    border-radius: 7px;
+    background-color: salmon;
+    margin-right: 3px;
+    color: #333333;
+}
+
+.editButton {
+    border: 2px solid salmon;
+    border-radius: 7px;
+    background-color: salmon;
+    margin-right: 3px;
+    color: #333333;
+}
+
+.deleteButton {
+    border: 2px solid salmon;
+    border-radius: 7px;
+    background-color: salmon;
+    margin-right: 3px;
+    color: #333333;
+}
+
+/*Filter*/
+.filter {
+    border: 2px solid salmon;
+    height: 50%;
+    position: fixed;
+    right: 2%;
+    top: 20%;
+    width: 260px;
     padding: 20px;
     border-radius: 10px;
-    position: relative;
-
 }
 
 aside h2 {
@@ -92,7 +167,6 @@ aside h2 {
     height: 28px;
     color: #333333;
     padding: 0 10px;
-    border-style: dotted;
 }
 
 section span {
@@ -123,23 +197,6 @@ section h3 {
     width: 100%;
 }
 
-.authors li {
-    margin-left: 15px;
-}
-
-.authors li a {
-    padding: 0 3px;
-    margin-right: 3px;
-    font-size: 14px;
-    border-radius: 3px;
-}
-
-.authors li a:hover {
-    box-shadow: inset 100px 100px 120px #689e4f;
-    color: #ffffff;
-    border: none;
-}
-
 .tagsList {
     margin-left: 15px;
 }
@@ -152,54 +209,59 @@ section h3 {
     text-transform: uppercase;
     line-height: 25px;
     padding: 0 25px;
-    background: #92d36e;
+    background: salmon;
     text-align: center;
     margin: 10px 0;
+    color: #333333;
+}
+
+.area-text {
+    width: 100%;
+    height: 70px;
 }
 
 .smallButton:hover {
     border: none;
-    box-shadow: inset 100px 100px 120px #689E4F;
-    color: #fff;
-}
-/*Footer*/
-footer{
-    background-color:antiquewhite;
-    border-top: 2px solid silver;
-    margin-top:10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 5%;
-}
-.rights{
-    float: right;
-    width: 100%;
-    text-align: right;
+    box-shadow: inset 100px 100px 120px rgba(225, 112, 82, 0.58);;
 }
 
 /* Paginator */
 
 .paginator {
-    width: 300px;
-    padding: 10px;
-    margin: auto;
+    width: 120px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: salmon;
     position: absolute;
     bottom: 7%;
-    left: 40%;
+    left: 41%;
+    text-align: center;
 }
 
-.paginator a,
-.paginator span {
-    display: inline-block;
-    height: 20px;
-    padding: 0 5px;
-    border-radius: 5px;
+.paginator a {
+    color: #333333;
 }
 
 .paginator a:hover {
     box-shadow: inset 100px 100px 120px salmon;
     color: #333333;
     border: none;
+}
+
+/*Footer*/
+footer {
+    background-color: antiquewhite;
+    border-top: 2px solid silver;
+    margin-top: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+}
+
+.rights {
+    float: right;
+    width: 100%;
+    text-align: right;
 }
